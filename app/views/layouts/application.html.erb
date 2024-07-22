@@ -11,8 +11,11 @@
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-    <%= yield %>
+  <body class="d-flex flex-column">
+    <%=  render 'layouts/navigation' %>
+    <%= render 'layouts/flashmessages' %>
+     <div class="container">
+         <%= yield %>
+      <div>
   </body>
 </html>
